@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- my css -->
+
+    <link rel="stylesheet" href="../css/acounts.css">
+    <link rel="stylesheet" href="../css/loader.css">
+    <link rel="stylesheet" href="../css/header.css">
+
+
+</head>
+
+<body>
+    <!-- heading start -->
+
+    <nav class="top-nav-color-purple">
+        <ul class="header-ul">
+            <li class="list-item nav-title">
+                Personal Blogging App
+            </li>
+            <li class="list-item" style="float: right; display: block;">
+                <a href="/screens/login.html" class="nav-item">
+                    Login>>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <nav class="navbar navbar-light">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Signup</span>
+        </div>
+    </nav>
+
+    <!-- heading end-->
+
+
+    <!-- signup form start -->
+
+    <div class="container-signup">
+
+        <form class="my-form">
+            <div class="mb-4">
+                <input type="text" class="form-control" id="userFName" placeholder="First Name">
+            </div>
+            <div class="mb-4">
+                <input type="text" class="form-control" id="userLName" placeholder="Last Name">
+            </div>
+
+            <div class="mb-4">
+                <input type="email" class="form-control" id="userEmail" placeholder="Email">
+            </div>
+
+            <div class="mb-4">
+                <input type="password" class="form-control" id="userPassword" placeholder="Password">
+            </div>
+
+            <div class="mb-4">
+                <input type="password" class="form-control" id="repeatedPassword" placeholder="Repeated Password" />
+            </div>
+
+            <div class="btn btn-color" onclick="Signup()">Signup</div>
+
+            <div class="spinner-circle" role="status" id="spinner">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </form>
+
+    </div>
+
+    <!-- signup form end -->
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- my js -->
+    <script type="module" src="../js/signup.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+/* * navbar design */
+
+.navigation-wrap {
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3 ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item {
+    padding: 0 .625rem;
+    transition: all .3s ease
+}
+
+.navbar-toggler:focus {
+    outline: unset !important;
+    border: unset !important;
+    box-shadow: none !important;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: var(--primary-color) !important;
+}
+
+.navigation-wrap .main-btn {
+    padding: 0.325rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+}
+
+/* change navbar styling on scroll */
+.navigation-wrap.scroll-on {
+    position: fixed;
+    background-color: white !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white-color);
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.09);
+    transition: all .15s ease-in-out 0s;
+}
+
+.navbar-brand {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    color: black;
+    font-weight: 700;
+    margin-right: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    white-space: nowrap;
+}

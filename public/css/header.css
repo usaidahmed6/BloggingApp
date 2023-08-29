@@ -1,0 +1,50 @@
+.top-nav-color-purple {
+    background-color: #8012fa;
+    width: 100%;
+    display: flex;
+    /* justify-content: right; */
+    align-items: center;
+}
+
+.header-ul {
+    list-style: none;
+    margin-right: 50px;
+    margin-top: 6px;
+    width: 100%;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+.nav-item:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.list-item {
+    display: inline-block;
+    color: #fff;
+}
+
+.nav-title {
+    font-weight: 900;
+    font-size: 20px;
+    display: inline-block;
+    color: #fff;
+}
+
+.nav-name {
+    color: rgb(223, 223, 223);
+}
+
+nav.navbar.navbar-expand-lg.navigation-wrap {
+    box-shadow: 0px 0px 40px 2px #e3e3e3;
+}
+
+.swal-button {
+    background-color: #8012fa !important;
+}

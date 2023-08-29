@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/loader.css">
+</head>
+
+<body>
+    <!-- header start -->
+
+    <nav class="top-nav-color-purple">
+        <ul class="header-ul">
+            <li class="list-item nav-title">
+                <a href="/" class="nav-item">
+                    Personal Blogging App
+                </a>
+            </li>
+            <li class="list-item" style="float: right; display: block; margin-top: 6px;" id="nav-right">
+               
+                <!-- <span class="nav-name mx-4">
+                    user Name
+                 </span>
+                 <span class="nav-item" onclick="logOutAcount()">
+                     Logout
+                 </span> -->
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navigation-wrap">
+            <div class="container">
+                <b class="navbar-brand">Dashboard</b>
+            </div>
+        </nav>
+    </header>
+
+    <!-- header end -->
+
+    <!-- dashboard start -->
+
+    <div class="container">
+        <div class="blogging-post-container my-4" id="btn-container">
+            <input type="tel" class="form-control" placeholder="Title" id="title" />
+            <textarea class="form-control" id="description" maxlength="3000" placeholder="what is your mind"></textarea>
+            <button class="btn btn-Publish" onclick="addBlog()" id="Publish-btn"> Publish blog </button>
+            <button class="btn btn-Publish edit-btn-hidden" onclick="editBlog()" id="edit-btn"> Edit Blog </button>
+        </div>
+
+        <div class="spinner-circle" role="status" id="spinner">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <div class="container" id="cardblogcont">
+        <h1 class="myBlogHeading"> My Blogs</h1>
+
+
+        <!-- <div class="mainDiv">
+            <div class="cardblog" id="blogCardHead">
+                <div><img src="../images/bg/bg-1.jpg" alt="" class="userimg"></div>
+                <div class="content">
+                    <p >h1dc skjcskjd></p>
+                    <p>name</p>
+                </div>
+            </div>
+
+
+            <div id="cardBody">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas praesentium porro, iste
+                    dignissimos vel sapiente corporis reiciendis sint ex assumenda aperiam voluptate atque nulla iure
+                    nostrum laborum, eligendi eos facere.</p>
+            </div>
+            <a class="delete" style="color: #7711f7;">
+                delete
+            </a>
+        </div> -->
+    </div>
+
+
+    <!-- dashboard end -->
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script type="module" src="../js/dashboard.js"></script>
+    <script type="module" src="../js/navbarControl.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+.blogging-post-container {
+    width: 100%;
+    padding: 40px 70px;
+    box-shadow: 0px 5px 20px 2px #e3e3e3;
+    border-radius: 10px;
+}
+
+.form-control {
+    margin: 30px 0px;
+}
+
+.btn-Publish {
+    background-color: #7711f7 !important;
+    color: #fff !important;
+}
+
+.btn-Publish:hover {
+    color: #fff !important;
+}
+
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 60px 0px;
+    border: 1px solid #dddddd;
+    padding: 40px 70px;
+    border-radius: 10px;
+
+}
+
+.userimg {
+    width: 80px;
+    border: 1px solid #dbdbdb;
+    height: 70px;
+    border-radius: 10px;
+}
+.color-light{
+    color: #626262;
+}
+
+.content {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.text-style-none {
+    text-decoration: none;
+}
+
+.cardblog {
+    display: flex;
+    flex-direction: row;
+}
+
+.myBlogHeading {
+    margin-top: 80px;
+}
+.color-purple{
+    color: #7711f7;
+    cursor: pointer;
+}
+.dis-none{
+    display: none !important;
+}
+.edit-btn-hidden{
+    display: none;
+}
+.editBtn{
+    display: inline-block !important;
+}
